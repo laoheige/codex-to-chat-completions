@@ -664,7 +664,7 @@ function convertSSEStream(backendRes, clientRes) {
       sse('response.content_part.done', {
         output_index: messageState.outputIndex,
         content_index: 0,
-        part: { type: 'output_text', text: messageState.fullText, annotations: [] }
+        part: { type: 'output_text', text: "", annotations: [] }
       });
       sse('response.output_text.done', {
         output_index: messageState.outputIndex,
